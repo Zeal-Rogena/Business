@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-center mb-4">Login Options</h5>
 
-                        <form class="mb-3" method="post" action="{% url 'home' %}">
+                        <form class="mb-3" method="post" action="{% url 'users:welcome' %}">
                             {% csrf_token %}
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>

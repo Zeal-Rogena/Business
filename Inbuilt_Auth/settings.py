@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'users',
+    'django_daraja',
 ]
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
@@ -145,3 +146,24 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = BASE_DIR/'media'
 MEDIA_URL = '/media/'
+
+MPESA_ENVIRONMENT = 'sandbox'
+
+#declare consumer keys and secrets
+#consumer secret is a passcode assigned to consumer key which is used to request access to API PROVIDER
+
+MPESA_CONSUMER_KEY = 'bfUvWWy7RvdaGLrMTrI1oaMtVbLSKRy9X38F5LWAzRjfOfRV'
+
+MPESA_CONSUMER_SECRET = 'A2oZ0pCPPSnbtULeBJrmAo1WPzTuvfAjZJaZaEDxAxelfCUcX8waXC9G1yQ4EJof'
+
+MPESA_SHORTCODE = '174379'
+
+MPESA_EXPRESS_SHORTCODE = '174379'
+
+MPESA_SHORTCODE_TYPE = 'paybill'
+
+MPESA_PASSKEY = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
+
+MPESA_INITIATOR_USERNAME = 'testapi'
+
+MPESA_INITIATOR_SECURITY_CREDENTIAL = 'Safaricom999!*!'
